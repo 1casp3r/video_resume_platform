@@ -1,0 +1,13 @@
+<h2>{{ group.title }}</h2>
+<form method="post">
+  {% for test in tests %}
+    <p>{{ test.question }}</p>
+    <input type="text" name="{{ test.id }}" required><br>
+  {% endfor %}
+  <button type="submit">Отправить ответы</button>
+</form>
+
+{% if message %}
+  <p style="color:green">{{ message }}</p>
+  <p>Процент правильных ответов: {{ percent }}</p>
+{% endif %}

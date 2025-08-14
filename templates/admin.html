@@ -1,0 +1,21 @@
+<h2>Добавить тест-группу</h2>
+<form method="post" action="/admin/group">
+  <input type="text" name="title" placeholder="Название группы" required>
+  <button type="submit">Добавить</button>
+</form>
+
+<h2>Добавить вопрос в группу</h2>
+<form method="post" action="/admin/question">
+  <select name="group_id" required>
+    {% for group in groups %}
+      <option value="{{ group.id }}">{{ group.title }}</option>
+    {% endfor %}
+  </select><br>
+  <input type="text" name="question" placeholder="Вопрос" required><br>
+  <input type="text" name="answer" placeholder="Ответ" required><br>
+  <button type="submit">Добавить</button>
+</form>
+
+{% if message %}
+  <p style="color:green">{{ message }}</p>
+{% endif %}

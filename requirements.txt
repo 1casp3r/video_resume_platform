@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+jinja2
+sqlalchemy
+psycopg2-binary
+aiofiles
+python-multipart
+requests
+python-dotenv
+git+https://github.com/openai/whisper.git 

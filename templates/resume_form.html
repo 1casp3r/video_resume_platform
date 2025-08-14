@@ -1,0 +1,22 @@
+<h2>Загрузка текстового резюме</h2>
+<form method="post" enctype="application/x-www-form-urlencoded" action="/resume/text">
+  <textarea name="text_resume" rows="10" cols="50" required></textarea><br>
+  <button type="submit">Отправить текст</button>
+</form>
+
+<hr>
+
+<h2>Загрузка видео резюме</h2>
+<form method="post" enctype="multipart/form-data" action="/resume/video">
+  <input type="file" name="video" accept="video/*" required><br>
+  <button type="submit">Отправить видео</button>
+</form>
+
+{% if message %}
+  <p style="color:green">{{ message }}</p>
+{% endif %}
+
+{% if ai_result %}
+  <h3>Результат анализа:</h3>
+  <pre>{{ ai_result }}</pre>
+{% endif %}

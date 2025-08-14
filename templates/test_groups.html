@@ -1,0 +1,6 @@
+<h2>Выберите тест</h2>
+<ul>
+  {% for group in groups %}
+    <li><a href="/tests/{{ group.id }}">{{ group.title }}</a></li>
+  {% endfor %}
+</ul>
