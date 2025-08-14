@@ -1,4 +1,4 @@
-# 📄 Resume AI Project
+# 📄 Video Resume Project
 
 Это веб-приложение на FastAPI для анализа резюме (текстового и видео) с помощью AI.  
 Также поддерживается система тестов и админка для их управления.
@@ -10,8 +10,8 @@
 ### 1. Клонирование проекта
 
 ```bash
-git clone https://github.com/yourusername/resume-ai.git
-cd resume-ai
+git clone https://github.com/1casp3r/video_resume_platform
+cd video_resume_platform
 ```
 
 ### 2. Создание .env файла
